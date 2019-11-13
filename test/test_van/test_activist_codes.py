@@ -32,6 +32,7 @@ class TestActivistCodes(unittest.TestCase):
                 u'nextPageLink': None}
 
         m.get(self.van.connection.uri + 'activistCodes', json=json)
+        self.assertTrue(False)
 
         # Expected Structure
         expected = ['status', 'scriptQuestion', 'name', 'mediumName',
